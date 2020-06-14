@@ -1,12 +1,13 @@
 package shoppingn2;
 public class Livro extends Produto {
+        int id; 
         String autor;
 	int paginas;
 
     public Livro(String autor, int paginas, int id, String nome, double preco, int desconto) {
         super(id, nome, preco, desconto);
         this.autor = autor;
-        this.paginas = paginas;
+       this.paginas = paginas;
     }
 
   

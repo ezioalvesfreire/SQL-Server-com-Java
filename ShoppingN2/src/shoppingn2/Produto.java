@@ -7,6 +7,10 @@ public class Produto {
 	double preco;
         int desconto; // adicionei
 
+       public Produto(){
+        
+       }
+        
     public Produto(int id, String nome, double preco, int desconto) {
         this.id = id;
         this.nome = nome;
@@ -14,6 +18,7 @@ public class Produto {
         this.desconto = desconto;
     }
 
+   
    
 
      

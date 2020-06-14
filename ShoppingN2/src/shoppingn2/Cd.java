@@ -6,7 +6,7 @@ public class Cd extends Produto {
     public Cd(String artista, int faixas, int id, String nome, double preco, int desconto) {
         super(id, nome, preco, desconto);
         this.artista = artista;
-        this.faixas = faixas;
+       // this.faixas = faixas;
     }
 
   

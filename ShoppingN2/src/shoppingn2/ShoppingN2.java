@@ -13,11 +13,11 @@ public class ShoppingN2 {
 
     public static void main(String[] args) {
         // TODO code application logic here
-        
+      //Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
          // TODO code application logic here
         // Cria variável p/ string de conexão
      //    String connectionUrl = "jdbc:sqlserver://localhost;databaseName=ExemploBanco;user=exemplobanco;password=catolica123"; 
-        String connectionUrl = "jdbc:sqlserver://localhost;databaseName=AvaliacaoN2;user=exemplobanco;password=ezio123";
+        String connectionUrl = "jdbc:sqlserver://localhost;databaseName=AvaliacaoN2;user=avaliacaon2;password=ezio123";
         
         // String com a consulta de inserção - ? = variável 
         String insertString = "INSERT INTO Produto (id, nome, preco, desconto) VALUES (?, ?, ?, ?)";
@@ -27,13 +27,14 @@ public class ShoppingN2 {
         		Connection con = DriverManager.getConnection(connectionUrl); 
         		PreparedStatement stmt = con.prepareStatement(insertString);
         	) {
-            System.out.println("TESTE!");
+            System.out.println("TESTE Shopping");
             
         	Produto p1 = new Produto(1, "Cristiano Araújo", 50, 30);
         	// insira na primeira ? o id do produto
         	stmt.setInt(1, p1.getId());
         	stmt.setString(2, p1.getNome()); // insira na segunda ? o nome do produto
-        	stmt.setDouble(3, p1.getPreco()); // insira na terceira ? a idade da produto
+        	stmt.setDouble(3, p1.getPreco()); // insira na terceira ? a preco do produto
+                stmt.setInt(4, p1.getDesconto()); // insira na terceira ? o desconto do produto
         	
         	stmt.executeUpdate(); // executa o insert
         	
@@ -42,7 +43,8 @@ public class ShoppingN2 {
         	stmt.setInt(1, p2.getId());
         	stmt.setString(2, p2.getNome()); // insira na segunda ? o nome do produto
         	stmt.setDouble(3, p2.getPreco()); // insira na terceira ? a idade do produto
-        	
+        	stmt.setInt(4, p2.getDesconto()); // insira na terceira ? o desconto do produto
+                
         	stmt.executeUpdate(); // executa o insert 
                 
               
