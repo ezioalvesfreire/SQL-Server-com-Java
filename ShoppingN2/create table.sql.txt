@@ -1,0 +1,80 @@
+CREATE TABLE Produto
+
+(
+    id smallint primary key,
+    nome VARCHAR(50),
+    preco smallmoney,
+    desconto int
+);
+
+
+create table Cliente
+
+( 
+     id smallint primary key,
+     nome VARCHAR(50),
+     CPF VARCHAR(20),
+    email VARCHAR(25)
+);
+
+
+create table Cd
+
+(
+
+id smallint primary key,
+artista VARCHAR(50),
+faixas smallint,
+);
+
+create table Livro
+
+(
+
+id smallint primary key,
+autor VARCHAR(50),
+pagina smallint
+
+);
+
+use AvaliacaoN2;
+
+truncate table cd;
+truncate table livro;
+truncate table produto;
+truncate table cliente;
+
+------------------------------------
+modifiquei a tabela produto
+
+use AvaliacaoN2
+
+CREATE TABLE Produto;
+
+(
+    id smallint primary key NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(50),
+    preco float,
+    desconto int
+);
+
+----------------------------------------------
+
+use AvaliacaoN2
+CREATE TABLE Produto
+(
+    id smallint primary key NOT NULL IDENTITY(100,1),
+    nome VARCHAR(50),
+    preco float,
+    desconto int
+);
+
+---------------------------------
+CREATE TABLE Produto
+
+(
+    id smallint primary key,
+    nome VARCHAR(50),
+    preco float,
+    desconto int
+);

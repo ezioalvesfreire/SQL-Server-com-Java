@@ -1,0 +1,8 @@
+use ExemploBanco
+
+create table pessoa(
+	id INT,
+	nome VARCHAR(50),
+	idade INT,
+	PRIMARY KEY(id)
+	);
