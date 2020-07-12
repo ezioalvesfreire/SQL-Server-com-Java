@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class dbAccess {
     
-   // private static final String connectionUrl = "jdbc:sqlserver://localhost;databaseName=ExemploBanco;user=exemplobanco;password=catolica123";
+  
     private static final String connectionUrl = "jdbc:sqlserver://localhost;databaseName=AvaliacaoN3;user=shoppingN3;password=ezio123";
 	private static Connection conn = null;
 	

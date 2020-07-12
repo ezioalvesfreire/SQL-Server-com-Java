@@ -45,7 +45,7 @@ public class MenuPrincipalTexto {
 		
 		do {
 			// Mostra o menu principal ou o menu secundário
-			System.out.println("Administração de RH"); // Título
+			System.out.println("Administração de clientes e categorias"); // Título
 			System.out.println();
 			
 			switch(estadoAtual) {
@@ -86,22 +86,7 @@ public class MenuPrincipalTexto {
 			} else {
 				menuEspecificoTexto = new MenuClienteTexto(); // apagar esta linha
 
-                /*
-                if (estadoAtual == Estado.PESSOAS) {
-                    menuEspecificoTexto = new MenuPessoaTexto();
-                } else {
-                    menuEspecificoTexto = new MenuDepartamentoTexto(); // <-- implementar esta classe
-                }
-                 */
-
-                /*
-                if (estadoAtual == Estado.PESSOAS) {
-                    menuEspecificoTexto = new MenuPessoaTexto();
-                } else {
-                    menuEspecificoTexto = new MenuDepartamentoTexto(); // <-- implementar esta classe
-                }
-                 */
-
+             
 				switch (opcao) {
 					case OP_ADICIONAR:
 						//adicionar um item

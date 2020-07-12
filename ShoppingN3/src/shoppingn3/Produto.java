@@ -2,24 +2,24 @@ package shoppingn3;
 
 public class Produto {
     
-     int id_Produto;
+        int id;
         String nome;
 	double preco;
         int desconto; // adicionei
 
-    public Produto(int id_Produto, String nome, double preco, int desconto) {
-        this.id_Produto = id_Produto;
+    public Produto(int id, String nome, double preco, int desconto) {
+        this.id = id;
         this.nome = nome;
         this.preco = preco;
         this.desconto = desconto;
     }
 
-    public int getId_Produto() {
-        return id_Produto;
+    public int getId() {
+        return id;
     }
 
-    public void setId_Produto(int id_Produto) {
-        this.id_Produto = id_Produto;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -47,7 +47,7 @@ public class Produto {
     }
      @Override
 	public String toString() {
-		return "Produto [id=" + id_Produto + ", nome=" + nome + ", preco=" + preco + "]";
+		return "Produto [id=" + id + ", nome=" + nome + ", preco=" + preco + "]";
 	}
 
     
